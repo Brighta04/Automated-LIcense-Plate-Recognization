@@ -1,17 +1,7 @@
 # Automated-LIcense-Plate-Recognization
 Automated License Plate Recognition (ALPR), also known as Automatic Number Plate Recognition (ANPR), is a technology that uses optical character recognition (OCR) on images to read vehicle registration plates. It's widely used for law enforcement, toll collection, access control, and traffic monitoring.
 
-Applications
 
-Law Enforcement: Detect stolen vehicles, track suspects.
-
-Toll Collection: Charge vehicles automatically without stopping.
-
-Parking Management: Grant access or charge fees based on plate numbers.
-
-Border Control: Track cross-border vehicle movement.
-
-Traffic Monitoring: Analyze traffic patterns and congestion.
 
 
 How ALPR Works
@@ -29,3 +19,18 @@ How ALPR Works
 
 
 5. Data Matching & Storage: The license plate number can be checked against databases for stolen vehicles, expired registrations, etc.
+
+Applications
+
+Law Enforcement: Detect stolen vehicles, track suspects.
+
+Toll Collection: Charge vehicles automatically without stopping.
+
+Parking Management: Grant access or charge fees based on plate numbers.
+
+Border Control: Track cross-border vehicle movement.
+
+Traffic Monitoring: Analyze traffic patterns and congestion.
+
+
+
