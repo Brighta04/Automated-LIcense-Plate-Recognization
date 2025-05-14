@@ -20,6 +20,38 @@ How ALPR Works
 
 5. Data Matching & Storage: The license plate number can be checked against databases for stolen vehicles, expired registrations, etc.
 
+
+project Structure 
+
+alpr_project/
+│
+├── data/
+│   ├── images/                 # Raw vehicle images
+│   ├── plates/                 # Cropped license plates
+│   └── test_videos/           # Optional: test videos for real-time ALPR
+│
+├── models/                    # Pretrained models (e.g., YOLO, Haar cascades)
+│   └── plate_detector.pt
+│
+├── src/
+│   ├── __init__.py
+│   ├── config.py              # Configurations and constants
+│   ├── capture.py             # Code to capture images from video/camera
+│   ├── detector.py            # Plate detection logic
+│   ├── ocr.py                 # OCR using Tesseract or other models
+│   ├── utils.py               # Helper functions (image preprocessing, etc.)
+│   └── main.py                # Entry point: integrates detection + OCR
+│
+├── outputs/
+│   ├── results.csv            # Detected plate numbers and timestamps
+│   ├── logs/                  # Logging information
+│   └── annotated_images/      # Images with detected plates drawn
+│
+├── requirements.txt           # Python dependencies
+├── README.md                  # Project documentation
+└── run_alpr.py                # Script to run ALPR from command line
+
+
 Applications
 
 Law Enforcement: Detect stolen vehicles, track suspects.
@@ -31,6 +63,11 @@ Parking Management: Grant access or charge fees based on plate numbers.
 Border Control: Track cross-border vehicle movement.
 
 Traffic Monitoring: Analyze traffic patterns and congestion.
+
+
+License: This project is licensed under the MIT License.
+
+
 
 
 
